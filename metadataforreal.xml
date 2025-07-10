@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" entityID="urn:my-idp">
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+      <ds:X509Data>
+        <ds:X509Certificate>MIICQjCCAaugAwIBAgIBADANBgkqhkiG9w0BAQ0FADA+MQswCQYDVQQGEwJ1czELMAkGA1UECAwCV0ExDTALBgNVBAoMBGhvbWUxEzARBgNVBAMMCnVybjpteS1pZHAwHhcNMjUwNzEwMDE0ODIyWhcNMjYwNzEwMDE0ODIyWjA+MQswCQYDVQQGEwJ1czELMAkGA1UECAwCV0ExDTALBgNVBAoMBGhvbWUxEzARBgNVBAMMCnVybjpteS1pZHAwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMrA/bMc9WYI8iuKoZ6KQK1y63k8g2nxXYTN/NaXA/8vH0s74Dp+Nxk3P8m8KnolyQN/01CCu3pMEFZRc5educ7iBuWkRh/ZrPbgVe/x1ddwjHYyMd00NysfWBfN4vF3y7/XOZ0Qeu2e0T/9r0M0GdgTFxpOf1opG77t/Oo2HlmvAgMBAAGjUDBOMB0GA1UdDgQWBBTrNw2VHsTrEjGm7NVSO4FMl7ixWzAfBgNVHSMEGDAWgBTrNw2VHsTrEjGm7NVSO4FMl7ixWzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBDQUAA4GBAJRgSqHro0CfzSAdJ/jFteEGJaNCBZrhJcBGqlESIc+r8NGr42UNb+wvA3hxSQL470Db0UCuN5x99ksJXgoC8hKCnebWEw1X7m6dKaXwOcucINVyGeSFdeFWSZz5vjtbZlTtcV4abQacQtSVHDRAV8Yw4lnuGUrciPJ3QCP5pGy5</ds:X509Certificate>
+      </ds:X509Data>
+    </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://foodsmart-cigna-development-auth.auth.us-west-2.amazoncognito.com/saml2/idpresponse"/>
+  </IDPSSODescriptor>
+</EntityDescriptor>
