@@ -8,6 +8,6 @@
       </ds:X509Data>
     </ds:KeyInfo>
     </KeyDescriptor>
-    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://foodsmart-cigna-development-auth.auth.us-west-2.amazoncognito.com/saml2/idpresponse"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://foodsmart-cigna-development.auth.us-west-2.amazoncognito.com/saml2/idpresponse"/>
   </IDPSSODescriptor>
 </EntityDescriptor>
